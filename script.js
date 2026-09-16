@@ -10,8 +10,8 @@
 
 (async function boot() {
   await Promise.all([
-    inject('site-header', 'partials/header.html'),
-    inject('site-footer', 'partials/footer.html'),
+    inject('site-header', '/partials/header.html'),
+    inject('site-footer', '/partials/footer.html'),
   ]);
   wireNav();
   wireSponsorForm();
