@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Open Tournament in Padelite</title>
+  <meta name="theme-color" content="#FAF7F1">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+
+  <!-- Open Graph: link previews in WhatsApp / iMessage -->
+  <meta property="og:title" content="Padelite Tournament">
+  <meta property="og:description" content="Tap to open this tournament in the Padelite app.">
+  <meta property="og:image" content="https://padeliteapp.com/assets/logo.png">
+  <meta property="og:type" content="website">
+
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body { min-height: 100vh; display: flex; flex-direction: column; }
+    .share-wrap {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 24px;
+    }
+    .share-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 40px 32px;
+      max-width: 420px;
+      width: 100%;
+      text-align: center;
+      box-shadow: var(--shadow-md);
+    }
+    .share-card img {
+      width: 80px;
+      height: 80px;
+      border-radius: 18px;
+      margin: 0 auto 20px;
+    }
+    .share-card h1 {
+      font-size: 22px;
+      font-weight: 900;
+      margin-bottom: 8px;
+    }
+    .share-card p {
+      color: var(--muted);
+      font-size: 15px;
+      margin-bottom: 26px;
+    }
+    .share-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .share-buttons a {
+      display: block;
+      background: var(--accent);
+      color: #fff !important;
+      padding: 14px;
+      border-radius: 10px;
+      font-weight: 800;
+      font-size: 15px;
+    }
+    .share-buttons a:hover { background: var(--accent-hover); }
+    .share-buttons a.secondary {
+      background: var(--bg);
+      color: var(--text) !important;
+      border: 1px solid var(--border);
+    }
+    .share-buttons a.secondary:hover { background: var(--border); }
+  </style>
+</head>
+<body>
+
+<div class="share-wrap">
+  <div class="share-card">
+    <img src="assets/logo.png" alt="Padelite">
+    <h1>Open in Padelite</h1>
+    <p>This link points to a tournament in the Padelite app. Tap below to open it.</p>
+    <div class="share-buttons">
+      <a id="deeplink" href="#">Open in Padelite</a>
+      <a class="secondary" href="https://apps.apple.com/eg/app/padelite-eg/id6776759466" target="_blank" rel="noopener">Get on App Store</a>
+      <a class="secondary" href="https://play.google.com/store/apps/details?id=com.padelite.app" target="_blank" rel="noopener">Get on Google Play</a>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Read ?id=... from the URL and build the app deep-link.
+  // The app is expected to intercept https://padeliteapp.com/t/<id>
+  // once App Links / Universal Links are configured.
+  const params = new URLSearchParams(location.search);
+  const id = params.get('id');
+  if (id) {
+    const url = 'https://padeliteapp.com/t/' + encodeURIComponent(id);
+    const link = document.getElementById('deeplink');
+    link.href = url;
+    // Try to open the app automatically on mobile.
+    if (/Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+      setTimeout(() => { window.location.href = url; }, 400);
+    }
+  }
+</script>
+</body>
+</html>
