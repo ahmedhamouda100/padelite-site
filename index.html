@@ -6,330 +6,125 @@
   <title>Padelite — Padel Tournaments, Organized Right</title>
   <meta name="description" content="Padelite organizes padel tournaments across Egypt — Americanos, leagues, knockouts, mixed nights. Register, play, climb the Padel Elite ranking.">
   <meta name="theme-color" content="#FAF7F1">
-  <link rel="icon" type="image/png" href="assets/favicon.png">
-  <link rel="apple-touch-icon" href="assets/favicon.png">
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+  <link rel="apple-touch-icon" href="/assets/favicon.png">
   <link rel="canonical" href="https://padeliteapp.com/">
-
   <meta property="og:title" content="Padelite — Padel Tournaments, Organized Right">
   <meta property="og:description" content="A community of padel players and organizers running tournaments across Egypt.">
   <meta property="og:image" content="https://padeliteapp.com/assets/logo.png">
   <meta property="og:url" content="https://padeliteapp.com/">
   <meta property="og:type" content="website">
-
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="/styles.css">
 </head>
-<body>
+<body data-section="home">
 
-<!-- ============ NAV ============ -->
-<nav class="nav" id="nav">
-  <div class="nav-inner">
-    <a href="#home" class="nav-brand">
-      <img src="assets/logo.png" alt="Padelite">
-      Padelite
-    </a>
-    <ul class="nav-links">
-      <li><a href="#who">Who we are</a></li>
-      <li><a href="#what">What we do</a></li>
-      <li><a href="#formats">Formats</a></li>
-      <li><a href="#app">The app</a></li>
-      <li><a href="#sponsor">Sponsor</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <a href="#app" class="nav-cta">Get the app</a>
-    <button class="nav-toggle" id="navToggle" aria-label="Menu">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
-        <path d="M4 6h16M4 12h16M4 18h16"/>
-      </svg>
-    </button>
-  </div>
-</nav>
+<div id="site-header"></div>
 
-<!-- ============ HERO ============ -->
-<header class="hero" id="home">
+<header class="hero">
   <div class="container">
     <h1>Padel tournaments,<br><span class="accent">organized right.</span></h1>
-    <p>Padelite is a padel-tournament collective in Egypt. We run Americanos, Mixed nights, Leagues and Knockouts every week — with proper draws, fair matches, and a Padel Elite ranking that actually means something.</p>
-    <div class="store-badges">
-      <a class="btn-primary" href="#contact" style="padding:14px 32px;">Join our next tournament →</a>
+    <p>Padelite designs and runs padel tournaments across Egypt — Americanos, mixed nights, leagues and knockouts. Fair draws, live scoring, and a Padel Elite ranking that follows you all season.</p>
+    <div class="hero-actions">
+      <a href="/tournaments/" class="btn btn-primary btn-arrow">See what we run</a>
+      <a href="/sponsors/" class="btn btn-ghost">Partner with us</a>
     </div>
-    <img class="hero-image" src="assets/logo.png" alt="Padelite">
+    <img class="hero-image" src="/assets/logo.png" alt="Padelite">
   </div>
 </header>
 
-<!-- ============ WHO WE ARE ============ -->
-<section class="section" id="who">
+<!-- ============ PILLARS ============ -->
+<section class="section">
   <div class="container">
-    <div class="about-grid">
-      <div>
-        <h2 class="section-title">Who we are</h2>
-        <p>Padelite is a padel-tournament operator based in Egypt. We design, run and score competitive events for players at every level — from Americanos and mixed nights up to open-level knockouts and multi-week leagues.</p>
-        <p>Our process is built on three commitments: a fair, algorithmic draw; live and transparent scoring; and a season-long ranking that rewards consistency, not just a single lucky Sunday.</p>
-        <p>We work with clubs, venues and brands to deliver tournaments players actually talk about on Monday — with the operational rigor of a professional league and the atmosphere of a home court.</p>
-      </div>
+    <div class="section-eyebrow">Everything under one roof</div>
+    <h2 class="section-title">Explore Padelite</h2>
+    <p class="section-sub">The core things we do. Each area lives on its own page so you can go as deep as you want.</p>
 
-      <div class="about-stats">
-        <div>
-          <div class="stat-num">EG</div>
-          <div class="stat-label">Based in Egypt</div>
-        </div>
-        <div>
-          <div class="stat-num">5+</div>
-          <div class="stat-label">Tournament formats</div>
-        </div>
-        <div>
-          <div class="stat-num">Weekly</div>
-          <div class="stat-label">Tournament cadence</div>
-        </div>
-        <div>
-          <div class="stat-num">Live</div>
-          <div class="stat-label">Padel Elite ranking</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+    <div class="pillars">
+      <a href="/about/" class="pillar">
+        <span class="pillar-tag">About us</span>
+        <h3>Who we are</h3>
+        <p>A padel-tournament operator based in Egypt, working with clubs, venues and brands to run competitive events players love.</p>
+        <span class="pillar-link">Meet Padelite</span>
+      </a>
 
-<!-- ============ WHAT WE DO ============ -->
-<section class="section" id="what" style="background:#F1EBDD;">
-  <div class="container">
-    <h2 class="section-title">What we do</h2>
-    <p class="section-sub">Padel needs more than a court and a WhatsApp group. It needs a proper process. Here's what we handle for every event.</p>
+      <a href="/tournaments/" class="pillar">
+        <span class="pillar-tag">Play</span>
+        <h3>Tournaments</h3>
+        <p>Every format we run — from social Americanos to full team knockouts — with rules, scoring, and how to register.</p>
+        <span class="pillar-link">Browse formats</span>
+      </a>
 
-    <div class="features-grid">
-      <div class="feature-card">
-        <div class="feature-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4M16 2v4M3 10h18M5 6h14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z"/></svg>
-        </div>
-        <h3>Weekly tournaments</h3>
-        <p>Multiple events every week across Egypt — from level-based Americanos to open Mixed nights. There's always something to play.</p>
-      </div>
-
-      <div class="feature-card">
-        <div class="feature-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-        </div>
-        <h3>Fair draws</h3>
-        <p>Snake-drafted groups that respect level and gender balance. No more "how did I get put with them" arguments — the algorithm shows its work.</p>
-      </div>
-
-      <div class="feature-card">
-        <div class="feature-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3v18M18 3v18M3 6h6M3 12h6M3 18h6M15 6h6M15 12h6M15 18h6"/></svg>
-        </div>
-        <h3>Live scoring</h3>
-        <p>Every match is scored in real time. Players and spectators watch standings shift as points land. No paper, no confusion.</p>
-      </div>
-
-      <div class="feature-card">
-        <div class="feature-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8zM6 2v3M10 2v3M14 2v3"/></svg>
-        </div>
+      <a href="/rankings/" class="pillar">
+        <span class="pillar-tag">Compete</span>
         <h3>Padel Elite ranking</h3>
-        <p>Every tournament credits points to your Padel Elite balance. Play consistently, climb the seasonal leaderboard, earn your spot at the closing event.</p>
-      </div>
+        <p>Every tournament credits points to your Padel Elite balance. See how the ranking works and check the current leaders.</p>
+        <span class="pillar-link">How points work</span>
+      </a>
 
-      <div class="feature-card">
-        <div class="feature-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-        </div>
-        <h3>A real community</h3>
-        <p>The same players show up week after week. Hall of Fame, share-worthy podium cards, level history — the moments that matter, saved.</p>
-      </div>
+      <a href="/app/" class="pillar">
+        <span class="pillar-tag">Product</span>
+        <h3>The Padelite app</h3>
+        <p>Every Padelite tournament runs on our own app. Register, get your schedule, watch live scoring. Free on iOS and Android.</p>
+        <span class="pillar-link">Explore the app</span>
+      </a>
 
-      <div class="feature-card">
-        <div class="feature-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 8h20M6 4v4M18 4v4"/></svg>
-        </div>
-        <h3>Predictable calendar</h3>
-        <p>Weekly slots, published in advance, with clear entry fees and levels. No last-minute changes — plan your padel around it.</p>
-      </div>
+      <a href="/sponsors/" class="pillar">
+        <span class="pillar-tag">Partners</span>
+        <h3>Sponsor Padelite</h3>
+        <p>Reach an engaged padel audience across every event we run. Audience data, packages, and an inquiry form for brands.</p>
+        <span class="pillar-link">Sponsorship hub</span>
+      </a>
+
+      <a href="/resources/" class="pillar">
+        <span class="pillar-tag">Stories</span>
+        <h3>Community &amp; stories</h3>
+        <p>Player spotlights, tournament recaps and quick guides. The community, not just the schedule.</p>
+        <span class="pillar-link">Read more</span>
+      </a>
     </div>
   </div>
 </section>
 
-<!-- ============ FORMATS ============ -->
-<section class="section" id="formats">
+<!-- ============ QUICK STATS ============ -->
+<section class="section section--soft section--tight">
   <div class="container">
-    <h2 class="section-title">Tournament formats</h2>
-    <p class="section-sub">Every event we run is one of these. Pick a format that matches your level, your schedule, and how competitive you want to be.</p>
-
-    <div class="formats-grid">
-      <div class="format-card">
-        <span class="format-tag">Individual · social</span>
-        <h3>Open Americano</h3>
-        <p>The classic. Show up alone, rotate partners across rounds, score individual points. Perfect for meeting new players and getting a lot of court time in one evening.</p>
-        <ul>
-          <li>~2–3 hours total</li>
-          <li>No partner needed</li>
-          <li>Fixed-point scoring — every point counts</li>
-          <li>Gender-split leaderboard</li>
-        </ul>
-      </div>
-
-      <div class="format-card">
-        <span class="format-tag">Individual · competitive</span>
-        <h3>Grouped Americano</h3>
-        <p>Bigger field, split into balanced groups by level and gender. Round-robin inside your group, then a Finals stage for the top qualifiers. The most competitive individual format we run.</p>
-        <ul>
-          <li>Group stage + Finals</li>
-          <li>Snake-draft groups with gender quotas</li>
-          <li>Podium points (10 / 8 / 6 / 4)</li>
-          <li>Half or full-day event</li>
-        </ul>
-      </div>
-
-      <div class="format-card">
-        <span class="format-tag">Team · flagship</span>
-        <h3>Groups + Knockout</h3>
-        <p>The tournament format. Register with a partner, top teams from each group advance to a knockout bracket. Cross-group seeding means no boring rematches in the quarter-finals.</p>
-        <ul>
-          <li>Group stage + full bracket</li>
-          <li>Upper / lower brackets available</li>
-          <li>Third-place playoff seeded automatically</li>
-          <li>Champion card + trophy</li>
-        </ul>
-      </div>
-
-      <div class="format-card">
-        <span class="format-tag">Team · short format</span>
-        <h3>Knockout only</h3>
-        <p>Single-elimination from R32 all the way to the Final. High-stakes matches from the first ball. For teams who want a fast, decisive event.</p>
-        <ul>
-          <li>Half-day format</li>
-          <li>Manual or hybrid seeding</li>
-          <li>Straight to the podium</li>
-        </ul>
-      </div>
-
-      <div class="format-card">
-        <span class="format-tag">Team · long format</span>
-        <h3>League</h3>
-        <p>A season, not a day. Round-robin across all registered teams, played over multiple weeks, with an optional Grand Final between the top two.</p>
-        <ul>
-          <li>Runs over 4–8 weeks</li>
-          <li>Every team plays every team</li>
-          <li>Optional Grand Final</li>
-          <li>Season points feed Padel Elite</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ THE APP ============ -->
-<section class="section" id="app" style="background:#F1EBDD;">
-  <div class="container">
-    <div class="about-grid">
+    <div class="split">
       <div>
-        <h2 class="section-title">Everything, in one app.</h2>
-        <p>Every Padelite tournament runs on our own app — Padelite for iOS and Android. Players use it to see the calendar, register, pay, get their match schedule, and watch live standings. Organizers use it to draw groups, dispatch courts, score matches, and finalize the podium.</p>
-        <p>The app is free. You don't need it to play — you can always register with us directly — but once you start using it, you won't go back to WhatsApp brackets.</p>
-        <div class="store-badges" style="justify-content:flex-start;">
-          <a class="store-btn" href="https://apps.apple.com/eg/app/padelite-eg/id6776759466" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 12.5c0-2.5 2-3.7 2.1-3.8-1.1-1.7-2.9-1.9-3.5-1.9-1.5-.2-2.9.9-3.7.9-.8 0-1.9-.9-3.2-.9-1.6 0-3.2.9-4 2.4-1.7 3-.4 7.4 1.2 9.8.8 1.2 1.8 2.5 3.1 2.5 1.2 0 1.7-.8 3.2-.8s1.9.8 3.2.8c1.3 0 2.2-1.2 3-2.4.9-1.4 1.3-2.7 1.3-2.8 0 0-2.5-1-2.7-3.8zM15 5.2c.7-.8 1.1-2 1-3.2-1 0-2.2.7-2.9 1.5-.6.7-1.2 1.9-1.1 3 1.1.1 2.2-.5 3-1.3z"/></svg>
-            <span><span class="small">Download on the</span><span class="big">App Store</span></span>
-          </a>
-          <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.padelite.app" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.6 2.1c-.4.3-.6.7-.6 1.3v17.2c0 .6.2 1 .6 1.3l9.8-9.9-9.8-9.9zm11.3 11.4l2.5 2.5-11.5 6.6 9-9.1zm4.6-4.2l-3-1.8-2.8 2.9 2.8 2.9 3-1.8c1.1-.6 1.1-1.7 0-2.2zm-4.6-.5l-9-9.1 11.5 6.6-2.5 2.5z"/></svg>
-            <span><span class="small">GET IT ON</span><span class="big">Google Play</span></span>
-          </a>
-        </div>
+        <div class="section-eyebrow">By the numbers</div>
+        <h2 class="section-title">Weekly, competitive, community-first.</h2>
+        <p style="color:var(--muted);font-size:17px;max-width:520px;">Our process is built on three commitments: a fair, algorithmic draw; live and transparent scoring; and a season-long ranking that rewards consistency, not just a single lucky Sunday.</p>
       </div>
-      <div class="about-stats">
-        <div>
-          <div class="stat-num">Free</div>
-          <div class="stat-label">To download</div>
-        </div>
-        <div>
-          <div class="stat-num">iOS + Android</div>
-          <div class="stat-label">Native apps</div>
-        </div>
-        <div>
-          <div class="stat-num">Live</div>
-          <div class="stat-label">Match updates</div>
-        </div>
-        <div>
-          <div class="stat-num">Every event</div>
-          <div class="stat-label">Runs on it</div>
-        </div>
+      <div class="stats">
+        <div><div class="stat-num">EG</div><div class="stat-label">Based in Egypt</div></div>
+        <div><div class="stat-num">5+</div><div class="stat-label">Tournament formats</div></div>
+        <div><div class="stat-num">Weekly</div><div class="stat-label">Events cadence</div></div>
+        <div><div class="stat-num">Live</div><div class="stat-label">Padel Elite ranking</div></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============ SPONSOR ============ -->
-<section class="section" id="sponsor">
+<!-- ============ CALL TO ACTION ============ -->
+<section class="section">
   <div class="container">
-    <div class="sponsor-panel">
-      <h2>Sponsor Padelite</h2>
-      <p>Weekly tournaments. Hundreds of engaged padel players. Every share carries your brand — from the podium card players post on the same day, to the shirts, the score banners, and the ranking pages inside the app. Let's talk about what fits your brand.</p>
-      <a href="mailto:amr.nabil@padeliteapp.com?subject=Padelite%20Sponsorship%20Inquiry" class="btn-primary">Become a sponsor →</a>
-    </div>
-  </div>
-</section>
-
-<!-- ============ CONTACT ============ -->
-<section class="section" id="contact">
-  <div class="container">
-    <h2 class="section-title" style="text-align:center;">Get in touch</h2>
-    <p class="section-sub" style="text-align:center;margin:0 auto 40px;">Join a tournament, ask about a private event, feature request, media inquiry — we read every message.</p>
-
-    <div class="contact-card">
-      <p>Reach us directly by email or on Instagram. We usually reply within 24 hours.</p>
-      <div class="contact-methods">
-        <a href="mailto:amr.nabil@padeliteapp.com">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          amr.nabil@padeliteapp.com
+    <div class="cta-panel">
+      <h2>Ready to play?</h2>
+      <p>Get the Padelite app to browse the calendar, register for a tournament, and watch your Padel Elite ranking climb.</p>
+      <div class="store-badges" style="justify-content:center;">
+        <a class="store-btn store-btn--light" href="https://apps.apple.com/eg/app/padelite-eg/id6776759466" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M17.5 12.5c0-2.5 2-3.7 2.1-3.8-1.1-1.7-2.9-1.9-3.5-1.9-1.5-.2-2.9.9-3.7.9-.8 0-1.9-.9-3.2-.9-1.6 0-3.2.9-4 2.4-1.7 3-.4 7.4 1.2 9.8.8 1.2 1.8 2.5 3.1 2.5 1.2 0 1.7-.8 3.2-.8s1.9.8 3.2.8c1.3 0 2.2-1.2 3-2.4.9-1.4 1.3-2.7 1.3-2.8 0 0-2.5-1-2.7-3.8zM15 5.2c.7-.8 1.1-2 1-3.2-1 0-2.2.7-2.9 1.5-.6.7-1.2 1.9-1.1 3 1.1.1 2.2-.5 3-1.3z"/></svg>
+          <span><span class="small">Download on the</span><span class="big">App Store</span></span>
         </a>
-        <a href="https://www.instagram.com/padelelite.eg" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.4a4 4 0 1 1-7.9 1.2 4 4 0 0 1 7.9-1.2z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-          @padelelite.eg
+        <a class="store-btn store-btn--light" href="https://play.google.com/store/apps/details?id=com.padelite.app" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M3.6 2.1c-.4.3-.6.7-.6 1.3v17.2c0 .6.2 1 .6 1.3l9.8-9.9-9.8-9.9zm11.3 11.4l2.5 2.5-11.5 6.6 9-9.1zm4.6-4.2l-3-1.8-2.8 2.9 2.8 2.9 3-1.8c1.1-.6 1.1-1.7 0-2.2zm-4.6-.5l-9-9.1 11.5 6.6-2.5 2.5z"/></svg>
+          <span><span class="small">GET IT ON</span><span class="big">Google Play</span></span>
         </a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============ FOOTER ============ -->
-<footer class="footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div>
-        <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
-          <img src="assets/logo.png" alt="Padelite" style="width:36px;height:36px;border-radius:8px;">
-          <span style="color:#fff;font-weight:900;font-size:18px;">Padelite</span>
-        </div>
-        <p style="color:rgba(255,255,255,0.55);font-size:14px;max-width:340px;">
-          Padel tournaments, organized right. Based in Egypt. Weekly events, real ranking, real community.
-        </p>
-      </div>
-      <div>
-        <h4>Padelite</h4>
-        <ul>
-          <li><a href="#who">Who we are</a></li>
-          <li><a href="#what">What we do</a></li>
-          <li><a href="#formats">Formats</a></li>
-          <li><a href="#sponsor">Sponsor</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Legal</h4>
-        <ul>
-          <li><a href="#app">The app</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="privacy.html">Privacy</a></li>
-          <li><a href="terms.html">Terms</a></li>
-          <li><a href="delete-account.html">Delete account</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© 2026 Padelite. All rights reserved.</span>
-      <span>Made in Egypt.</span>
-    </div>
-  </div>
-</footer>
-
-<script src="script.js"></script>
+<div id="site-footer"></div>
+<script src="/script.js"></script>
 </body>
 </html>

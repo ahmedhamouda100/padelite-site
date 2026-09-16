@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sponsorship Inquiry — Padelite</title>
+  <meta name="description" content="Send a note about your brand — we reply within 48 hours.">
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body data-section="sponsors">
+<div id="site-header"></div>
+
+<main class="section">
+  <div class="container">
+    <nav class="crumbs">
+      <a href="/">Home</a><span class="sep">/</span>
+      <a href="/sponsors/">Sponsor</a><span class="sep">/</span>
+      <span class="current">Inquiry</span>
+    </nav>
+
+    <header class="page-hero">
+      <div class="section-eyebrow">Sponsorship · Inquiry</div>
+      <h1>Start a sponsorship conversation.</h1>
+      <p class="lede">Tell us about your brand and what you're looking for. We reply within 48 hours with a proposal — or at minimum a fast honest answer if we're not the right fit.</p>
+    </header>
+
+    <div class="split" style="margin-top:36px;">
+      <div class="form-card">
+        <form id="sponsorForm" novalidate>
+          <div class="form-row">
+            <label for="sp-name">Your name*</label>
+            <input id="sp-name" name="name" required autocomplete="name">
+          </div>
+          <div class="form-row">
+            <label for="sp-brand">Brand / company*</label>
+            <input id="sp-brand" name="brand" required autocomplete="organization">
+          </div>
+          <div class="form-row">
+            <label for="sp-email">Work email*</label>
+            <input id="sp-email" name="email" type="email" required autocomplete="email">
+          </div>
+          <div class="form-row">
+            <label for="sp-phone">Phone / WhatsApp (optional)</label>
+            <input id="sp-phone" name="phone" type="tel" autocomplete="tel">
+          </div>
+          <div class="form-row">
+            <label for="sp-interest">What are you interested in?</label>
+            <select id="sp-interest" name="interest">
+              <option value="single">Single-tournament partner</option>
+              <option value="season" selected>Full-season partnership</option>
+              <option value="category">Category exclusivity</option>
+              <option value="other">Something custom</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="sp-msg">Tell us about your brand and goals*</label>
+            <textarea id="sp-msg" name="message" required placeholder="What's the brand? What audience are you trying to reach? Any timeline in mind?"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;">Send inquiry</button>
+          <div class="form-status" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+
+      <aside class="prose">
+        <h2>What happens next</h2>
+        <p>1. We read every inquiry personally (no bot filters).</p>
+        <p>2. If it looks like a fit, we send our audience report and set up a short call.</p>
+        <p>3. If not, we tell you straight — no ghosting.</p>
+
+        <h3>Prefer email?</h3>
+        <p>Write directly to <a href="mailto:amr.nabil@padeliteapp.com?subject=Sponsorship%20inquiry%20%E2%80%94%20Padelite">amr.nabil@padeliteapp.com</a>.</p>
+      </aside>
+    </div>
+  </div>
+</main>
+
+<div id="site-footer"></div>
+<script src="/script.js"></script>
+</body>
+</html>

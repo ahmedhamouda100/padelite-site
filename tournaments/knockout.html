@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Knockout — Padelite Tournaments</title>
+  <meta name="description" content="Single-elimination padel tournaments from R32 to the Final.">
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body data-section="tournaments">
+<div id="site-header"></div>
+
+<main class="section">
+  <div class="container">
+    <nav class="crumbs">
+      <a href="/">Home</a><span class="sep">/</span>
+      <a href="/tournaments/">Tournaments</a><span class="sep">/</span>
+      <span class="current">Knockout</span>
+    </nav>
+
+    <section class="format-hero">
+      <span class="tag">Team · short format</span>
+      <h1>Knockout only</h1>
+      <p>Single-elimination bracket from R32 all the way to the Final. High-stakes matches from the first ball — for teams who want a fast, decisive event.</p>
+      <div class="format-facts">
+        <div class="fact"><div class="k">Duration</div><div class="v">Half day</div></div>
+        <div class="fact"><div class="k">Field</div><div class="v">8–32 teams</div></div>
+        <div class="fact"><div class="k">Structure</div><div class="v">Single-elim</div></div>
+        <div class="fact"><div class="k">Seeding</div><div class="v">Auto or manual</div></div>
+      </div>
+    </section>
+
+    <div class="prose">
+      <h2>Seeding options</h2>
+      <p>Padelite supports three seeding modes: fully automatic (by team level average), manual pair-based seeding for shaping the draw, and hybrid — you pin the top seeds and let the algorithm fill the rest.</p>
+
+      <h2>Bracket math</h2>
+      <p>The bracket generator handles all standard sizes (R32, R16, QF, SF, Final) with proper first-round byes. There's no manual math to worry about; the app draws it, schedules it, and updates it as scores land.</p>
+
+      <h2>Live scoring &amp; reschedule</h2>
+      <p>Every match is scored live. Long-press any match to open the reschedule sheet — swap courts, shift start time per-match or bulk-shift from a given match onwards.</p>
+
+      <h2>Third-place playoff</h2>
+      <p>Semi-final losers meet in a third-place match, so both bronze medals are earned on court, not by disqualification.</p>
+    </div>
+  </div>
+</main>
+
+<div id="site-footer"></div>
+<script src="/script.js"></script>
+</body>
+</html>
