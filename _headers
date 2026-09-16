@@ -1,0 +1,35 @@
+# Cloudflare Pages headers file.
+# Tells Cloudflare's edge to NOT cache HTML pages — every request has to
+# fetch the fresh document from the origin. This prevents the bug where
+# the browser sees /about/ in the URL bar but the edge returned the
+# home-page HTML for it.
+#
+# Static assets (CSS, JS, images, fonts) stay cacheable so page loads
+# stay fast.
+
+/*.html
+  Cache-Control: no-store, must-revalidate
+
+/
+  Cache-Control: no-store, must-revalidate
+
+/about/*
+  Cache-Control: no-store, must-revalidate
+/tournaments/*
+  Cache-Control: no-store, must-revalidate
+/rankings/*
+  Cache-Control: no-store, must-revalidate
+/sponsors/*
+  Cache-Control: no-store, must-revalidate
+/app/*
+  Cache-Control: no-store, must-revalidate
+/resources/*
+  Cache-Control: no-store, must-revalidate
+
+# Static assets — cache aggressively at the edge, revalidate at the browser.
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+/styles.css
+  Cache-Control: public, max-age=3600
+/script.js
+  Cache-Control: public, max-age=3600
